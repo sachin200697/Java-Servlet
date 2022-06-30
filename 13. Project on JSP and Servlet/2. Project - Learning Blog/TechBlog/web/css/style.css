@@ -1,0 +1,145 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+    font-size: 2rem;
+    
+}
+
+html{
+    font-size: 65.5%;
+    box-sizing: border-box;
+}
+
+
+/*navbar*/
+
+.navbar{
+    background: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem; 
+    padding-right: 6rem;
+}
+
+.navbar .navbar__ul{
+    display: flex;
+    
+    
+    color:white;
+    list-style: none;
+    
+    justify-content: space-between;
+}
+
+.navbar__li{
+    margin: 0 1rem;
+}
+
+.navbar__a{
+    color:white;
+    text-decoration: none;
+}
+
+
+.navbar__a__category{
+    position: relative;
+    
+}
+
+.navbar__category{
+    /*display: none;*/
+    /*position: absolute;*/
+    
+    
+    background: black;
+    list-style: none;
+    color: white;
+    
+    
+    
+    
+}
+
+.navbar__category__a{
+    color:white;
+    text-decoration: none;
+    
+    text-align: left;
+}
+
+.navbar__category__li{
+    text-align: left;
+    /*background: red;*/
+}
+
+.navbar__a__category:focus ~ .navbar__category{
+    display: block;           
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+.card{
+    width: 25%;
+    background: #008080;
+    margin: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+
+/*Form*/
+.form-container{
+    padding: 5rem;
+    
+}
+
+.register-form > div{
+    margin: 2rem;
+}
+
+
+/*profile page style*/
+#main{
+    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    padding: 1rem;
+   
+}
+.categories{
+    
+}
+.content{
+    
+}
+
+.post-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post{   
+    margin: 1rem;
+    padding: .5rem;
+    border: 1px solid black;
+    width: 45%;
+}
+.post img{
+    width:100%;
+    height: 100%;
+}
+
+.active{
+    background: black;
+    color: white;
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    
+    <!--Declare servlet-->
+    <servlet>
+        <!--We can provide any name-->
+        <servlet-name>first</servlet-name>
+        
+        <!--we need to give package name followed with class name in which Servlet was implemented-->
+        <servlet-class>com.servlets.FirstServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>second</servlet-name>
+        <servlet-class>com.servlets.SecondServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>httpservlet</servlet-name>
+        <servlet-class>com.servlets.MyHttpServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>com.servlets.RegisterServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>success</servlet-name>
+        <servlet-class>com.servlets.SuccessServlet</servlet-class>
+    </servlet>
+    
+    
+    
+    
+    <!--Mapping-->
+    <servlet-mapping>
+        <!--We need to provide same name as proivded above in servlet declaration's servlet-name -->
+        <servlet-name>first</servlet-name>
+        
+        <!--This is imp. Server will identify with the below mentioned url, 
+        which name and then which class it needs to run.  localhost:9494/CreateServlet/web/ -->
+        <url-pattern>/web</url-pattern>
+        
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>second</servlet-name>
+        <url-pattern>/second</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>httpservlet</servlet-name>
+        <url-pattern>/third</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        
+        <!--/RegisterServlet is the same as we give in the html form for action-->
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>success</servlet-name>
+        <url-pattern>/success</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list>
+        <welcome-file>home.html</welcome-file>
+    </welcome-file-list>
+    
+    
+    
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

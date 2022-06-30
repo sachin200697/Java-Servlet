@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Home Page</h1>
+        <div>
+            <h2><a href="web">First Page</a></h2>
+            <h2><a href="second">Second Page</a></h2>
+        </div>
+        
+        
+        <form action="RegisterServlet" method="post">
+            <h1>Registration Form</h1>
+            
+            <table>
+                <tr>
+                    <td>Name: </td>
+                    <td>
+                        <input type="text" name="user_name" placeholder="Enter Name"/>
+                    </td>                     
+                </tr>
+                
+                <tr>
+                    <td>Email </td>
+                    <td>
+                        <input type="email" name="user_email" placeholder="Enter Email"/>
+                    </td>                     
+                </tr>
+                
+                <tr>
+                    <td>Password </td>
+                    <td>
+                        <input type="password" name="user_password"/>
+                    </td>                     
+                </tr>
+                
+                <tr>
+                    <td>Gender </td>
+                    <td>
+                        <input type="radio" name="user_gender" value="male"/> Male &nbsp; &nbsp;
+                        <input type="radio" name="user_gender" value="female"/> Female
+                    </td>                     
+                </tr>
+                
+                <tr>
+                    <td>Select Course </td>
+                    <td>
+                        <select name="user_course">
+                            <option value="java">Java</option>
+                            <option value="php">PHP</option>
+                            <option value="js">JS</option>
+                            <option value="python">Python</option>
+                        </select>
+                    </td>                     
+                </tr>
+                
+                <tr>
+                    <td> 
+                        <input type="checkbox" name="condition" value="checked">
+                    </td>
+                    <td>
+                        Agree terms and conditions
+                    </td>                     
+                </tr>
+                
+                <tr>
+                    <td> 
+                        <button type="submit">Submit</button>
+                    </td>
+                    <td>
+                        <button type="reset">Reset</button>
+                    </td>                     
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
